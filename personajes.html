@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Patrio - Personajes Ilustres</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f4f6f8; color: #333; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    header { background-color: #006847; color: white; text-align: center; padding: 25px 10px 15px 10px; }
+    header h1 { font-size: 2.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    nav { background-color: #ce1126; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
+    nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+    nav ul li a { display: block; color: white; text-decoration: none; padding: 14px 20px; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
+    nav ul li a:hover, nav ul li a.active { background-color: #9e0d1d; }
+    .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
+    .card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #006847; }
+    .card h2 { color: #006847; border-bottom: 2px solid #ce1126; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
+    .grid-characters { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .character-card { border: 1px solid #eee; border-radius: 6px; padding: 15px; text-align: center; background: #fff; }
+    .character-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
+    .character-card h3 { color: #006847; font-size: 1.05rem; margin-bottom: 5px; }
+    footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: auto; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MES PATRIO</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="fechas.html">FECHAS IMPORTANTES</a></li>
+      <li><a href="personajes.html" class="active">PERSONAJES ILUSTRES</a></li>
+      <li><a href="datos.html">DATOS CURIOSOS</a></li>
+      <li><a href="mitos.html">MITOS</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Personajes Ilustres</h2>
+      <div class="grid-characters">
+        <div class="character-card">
+          <img src="images.jpg" alt="José María Morelos y Pavón">
+          <h3>José María Morelos y Pavón</h3>
+          <p>Líder insurgente y autor de Sentimientos de la Nación.</p>
+        </div>
+        <div class="character-card">
+          <img src="images (1).jpg" alt="Los Niños Héroes">
+          <h3>Los Niños Héroes</h3>
+          <p>Juan de la Barrera, Juan Escutia, Agustín Melgar, Fernando Montes de Oca, Vicente Suárez y Francisco Márquez.</p>
+        </div>
+        <div class="character-card">
+          <img src="images (2).jpg" alt="Agustín de Iturbide y Vicente Guerrero">
+          <h3>Agustín de Iturbide y Vicente Guerrero</h3>
+          <p>Consumaron la Independencia al mando del Ejército Trigarante.</p>
+        </div>
+        <div class="character-card">
+          <img src="images (3).jpg" alt="Venustiano Carranza">
+          <h3>Venustiano Carranza</h3>
+          <p>Promulgó la Constitución que fijó el Informe Presidencial.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ALUMNO:</strong> VAZQUEZ HERNANDEZ ELIANA KARIME | <strong>GRUPO:</strong> 5°J | <strong>No. Control:</strong> 0908</p>
+  </footer>
+
+</body>
+</html>

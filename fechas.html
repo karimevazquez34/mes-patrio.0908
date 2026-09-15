@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Patrio - Fechas Importantes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f4f6f8; color: #333; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    header { background-color: #006847; color: white; text-align: center; padding: 25px 10px 15px 10px; }
+    header h1 { font-size: 2.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    nav { background-color: #ce1126; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
+    nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+    nav ul li a { display: block; color: white; text-decoration: none; padding: 14px 20px; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
+    nav ul li a:hover, nav ul li a.active { background-color: #9e0d1d; }
+    .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
+    .card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #006847; }
+    .card h2 { color: #006847; border-bottom: 2px solid #ce1126; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
+    .grid-dates { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+    .date-box { border: 1px solid #e0e0e0; border-left: 5px solid #006847; padding: 15px; border-radius: 4px; background-color: #fafafa; }
+    .date-box h3 { color: #ce1126; font-size: 0.95rem; margin-bottom: 5px; }
+    .date-box h4 { color: #111; margin-bottom: 8px; font-size: 1.05rem; }
+    footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: auto; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MES PATRIO</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="fechas.html" class="active">FECHAS IMPORTANTES</a></li>
+      <li><a href="personajes.html">PERSONAJES ILUSTRES</a></li>
+      <li><a href="datos.html">DATOS CURIOSOS</a></li>
+      <li><a href="mitos.html">MITOS</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Fechas Importantes</h2>
+      <div class="grid-dates">
+        <div class="date-box">
+          <h3>1 DE SEPTIEMBRE DE 1917</h3>
+          <h4>Apertura del Congreso e Informe Presidencial</h4>
+          <p>El Presidente de la República rinde su informe de labores ante el Congreso de la Unión, marcando formalmente el inicio del periodo ordinario de sesiones legislativas en el país.</p>
+        </div>
+        <div class="date-box">
+          <h3>13 DE SEPTIEMBRE DE 1847</h3>
+          <h4>Gesta Heroica de los Niños Héroes</h4>
+          <p>Se rinde homenaje a los cadetes del Colegio Militar que defendieron el Castillo de Chapultepec durante la invasión estadounidense en 1847, símbolo de valentía y honor nacional.</p>
+        </div>
+        <div class="date-box">
+          <h3>15 DE SEPTIEMBRE DE 1810</h3>
+          <h4>Conmemoración del Grito de Dolores</h4>
+          <p>Representantes del gobierno en todos los niveles encabezan la ceremonia cívica en las plazas públicas para rememorar el llamado a las armas hecho por Miguel Hidalgo en 1810.</p>
+        </div>
+        <div class="date-box">
+          <h3>16 DE SEPTIEMBRE DE 1810</h3>
+          <h4>Aniversario del Inicio de la Independencia</h4>
+          <p>Fecha patria principal en la que se celebra el comienzo formal de la lucha armada independentista, acompañada tradicionalmente por el desfile cívico-militar en la Ciudad de México.</p>
+        </div>
+        <div class="date-box">
+          <h3>27 DE SEPTIEMBRE DE 1821</h3>
+          <h4>Consumación de la Independencia de México</h4>
+          <p>Fecha patria principal en la que se celebra la consumación formal de la lucha armada independentista, acompañada tradicionalmente por el desfile cívico-militar.</p>
+        </div>
+        <div class="date-box">
+          <h3>30 DE SEPTIEMBRE DE 1765</h3>
+          <h4>Natalicio de José María Morelos y Pavón</h4>
+          <p>Se conmemora el nacimiento en 1765 del "Siervo de la Nación", estratega militar fundamental y autor de los Sentimientos de la Nación.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ALUMNO:</strong> VAZQUEZ HERNANDEZ ELIANA KARIME | <strong>GRUPO:</strong> 5°J | <strong>No. Control:</strong> 0908</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Patrio - Datos Curiosos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f4f6f8; color: #333; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    header { background-color: #006847; color: white; text-align: center; padding: 25px 10px 15px 10px; }
+    header h1 { font-size: 2.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    nav { background-color: #ce1126; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
+    nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+    nav ul li a { display: block; color: white; text-decoration: none; padding: 14px 20px; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
+    nav ul li a:hover, nav ul li a.active { background-color: #9e0d1d; }
+    .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
+    .card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #006847; }
+    .card h2 { color: #006847; border-bottom: 2px solid #ce1126; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: center; }
+    .info-list { list-style: none; }
+    .info-list li { background: #f8f9fa; border-left: 4px solid #ce1126; margin-bottom: 12px; padding: 12px 15px; border-radius: 3px; }
+    .img-center { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto; }
+    footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: auto; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MES PATRIO</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="fechas.html">FECHAS IMPORTANTES</a></li>
+      <li><a href="personajes.html">PERSONAJES ILUSTRES</a></li>
+      <li><a href="datos.html" class="active">DATOS CURIOSOS</a></li>
+      <li><a href="mitos.html">MITOS</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Datos Curiosos</h2>
+      <div class="grid-2">
+        <ul class="info-list">
+          <li><strong>El Grito fue el 16 al amanecer:</strong> Miguel Hidalgo dio el Grito cerca de las 5:00 a.m. del 16 de septiembre; la fiesta se movió a la noche del 15 durante el gobierno de Porfirio Díaz.</li>
+          <li><strong>Sin bandera tricolor:</strong> Hidalgo usó un estandarte de la Virgen de Guadalupe; la bandera verde, blanca y roja surgió hasta 1821.</li>
+          <li><strong>Chile en nogada festivo:</strong> Monjas agustinas de Puebla lo crearon en 1821 para celebrar a Agustín de Iturbide con los colores del Ejército Trigarante.</li>
+          <li><strong>La campana original se mudó:</strong> Permaneció en Dolores, Guanajuato, hasta 1896, cuando se trasladó al Palacio Nacional en la CDMX.</li>
+          <li><strong>Firma tardía:</strong> La Independencia no se firmó en 1810, sino 11 años después, el 28 de septiembre de 1821.</li>
+        </ul>
+        <div>
+          <img class="img-center" src="df205e392a9fc49f1ef0240000b6e5ca.jpg" alt="Hidalgo con Estandarte" style="max-height: 280px;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>ALUMNO:</strong> VAZQUEZ HERNANDEZ ELIANA KARIME | <strong>GRUPO:</strong> 5°J | <strong>No. Control:</strong> 0908</p>
+  </footer>
+
+</body>
+</html>
