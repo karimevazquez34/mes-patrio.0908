@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mes Patrio - Mitos</title>
   <style>
+    /* Estilos generales idénticos para mantener consistencia de diseño */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body { background-color: #f4f6f8; color: #333; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
     header { background-color: #006847; color: white; text-align: center; padding: 25px 10px 15px 10px; }
     header h1 { font-size: 2.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    
     nav { background-color: #ce1126; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
     nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
     nav ul li a { display: block; color: white; text-decoration: none; padding: 14px 20px; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
     nav ul li a:hover, nav ul li a.active { background-color: #9e0d1d; }
+    
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
     .card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #006847; }
     .card h2 { color: #006847; border-bottom: 2px solid #ce1126; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
+    
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: center; }
+    
     .info-list { list-style: none; }
     .info-list li { background: #f8f9fa; border-left: 4px solid #ce1126; margin-bottom: 12px; padding: 12px 15px; border-radius: 3px; }
+    
     .img-center { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 0 auto; }
     footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: auto; }
   </style>
@@ -43,6 +49,7 @@
     <section class="card">
       <h2>Mitos</h2>
       <div class="grid-2">
+        <!-- Lista de Mitos Desmentidos -->
         <ul class="info-list">
           <li><strong>Juan Escutia y la bandera:</strong> No se arrojó envuelto en el pabellón patrio; murió combatiendo en la batalla de Chapultepec.</li>
           <li><strong>Los Niños Héroes:</strong> No eran niños indefensos, sino cadetes jóvenes (de 13 a 20 años) con entrenamiento militar.</li>
@@ -50,6 +57,7 @@
           <li><strong>El Grito de Hidalgo:</strong> No pedía independencia total, sino autonomía leal al rey español Fernando VII frente a la invasión francesa.</li>
           <li><strong>Igualdad inmediata:</strong> La consumación en 1821 no abolió la desigualdad; el poder quedó principalmente en manos de las élites criollas.</li>
         </ul>
+        <!-- Imagen descriptiva local -->
         <div>
           <img class="img-center" src="df205e392a9fc49f1ef0240000b6e5ca.jpg" alt="Hidalgo con Estandarte" style="max-height: 280px;">
         </div>
