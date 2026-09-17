@@ -5,21 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mes Patrio - Fechas Importantes</title>
   <style>
+    /* Reset global */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #f4f6f8; color: #333; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    
+    /* Configuración para el Sticky Footer */
+    body { 
+      background-color: #f4f6f8; 
+      color: #333; 
+      line-height: 1.6; 
+      display: flex; 
+      flex-direction: column; 
+      min-height: 100vh; 
+    }
     header { background-color: #006847; color: white; text-align: center; padding: 25px 10px 15px 10px; }
     header h1 { font-size: 2.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    
+    /* Navegación pegajosa superior */
     nav { background-color: #ce1126; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
     nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
     nav ul li a { display: block; color: white; text-decoration: none; padding: 14px 20px; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
     nav ul li a:hover, nav ul li a.active { background-color: #9e0d1d; }
+    
+    /* Contenedor flexible */
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
     .card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #006847; }
     .card h2 { color: #006847; border-bottom: 2px solid #ce1126; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
-    .grid-dates { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
-    .date-box { border: 1px solid #e0e0e0; border-left: 5px solid #006847; padding: 15px; border-radius: 4px; background-color: #fafafa; }
+    
+    /* Cuadrícula adaptable para organizar las fechas */
+    .grid-dates { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea columnas dinámicas */
+      gap: 15px; 
+    }
+    
+    /* Estilos de las cajas individuales de fechas */
+    .date-box { 
+      border: 1px solid #e0e0e0; 
+      border-left: 5px solid #006847; /* Borde verde lateral distintivo */
+      padding: 15px; 
+      border-radius: 4px; 
+      background-color: #fafafa; 
+    }
     .date-box h3 { color: #ce1126; font-size: 0.95rem; margin-bottom: 5px; }
     .date-box h4 { color: #111; margin-bottom: 8px; font-size: 1.05rem; }
+    
+    /* Footer fijado abajo */
     footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: auto; }
   </style>
 </head>
@@ -29,6 +59,7 @@
     <h1>MES PATRIO</h1>
   </header>
 
+  <!-- Enlace activo en 'FECHAS IMPORTANTES' -->
   <nav>
     <ul>
       <li><a href="index.html">INICIO</a></li>
@@ -42,6 +73,7 @@
   <main class="container">
     <section class="card">
       <h2>Fechas Importantes</h2>
+      <!-- Lista en formato de Cuadrícula -->
       <div class="grid-dates">
         <div class="date-box">
           <h3>1 DE SEPTIEMBRE DE 1917</h3>
