@@ -5,21 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mes Patrio - Personajes Ilustres</title>
   <style>
+    /* Estilos base y estructura flex para el footer */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body { background-color: #f4f6f8; color: #333; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
     header { background-color: #006847; color: white; text-align: center; padding: 25px 10px 15px 10px; }
     header h1 { font-size: 2.2rem; letter-spacing: 2px; text-transform: uppercase; }
+    
     nav { background-color: #ce1126; position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
     nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
     nav ul li a { display: block; color: white; text-decoration: none; padding: 14px 20px; font-weight: bold; font-size: 0.9rem; transition: background 0.3s; }
     nav ul li a:hover, nav ul li a.active { background-color: #9e0d1d; }
+    
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
     .card { background: white; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid #006847; }
     .card h2 { color: #006847; border-bottom: 2px solid #ce1126; padding-bottom: 8px; margin-bottom: 20px; font-size: 1.6rem; }
-    .grid-characters { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-    .character-card { border: 1px solid #eee; border-radius: 6px; padding: 15px; text-align: center; background: #fff; }
-    .character-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
+    
+    /* Cuadrícula adaptable para las tarjetas de personajes */
+    .grid-characters { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      gap: 20px; 
+    }
+    
+    /* Tarjeta individual de personaje con imagen y descripción */
+    .character-card { 
+      border: 1px solid #eee; 
+      border-radius: 6px; 
+      padding: 15px; 
+      text-align: center; 
+      background: #fff; 
+    }
+    .character-card img { 
+      width: 100%; 
+      height: 180px; 
+      object-fit: cover; /* Recorta la imagen para que conserve sus proporciones sin deformarse */
+      border-radius: 4px; 
+      margin-bottom: 10px; 
+    }
     .character-card h3 { color: #006847; font-size: 1.05rem; margin-bottom: 5px; }
+    
     footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: auto; }
   </style>
 </head>
@@ -43,6 +67,7 @@
     <section class="card">
       <h2>Personajes Ilustres</h2>
       <div class="grid-characters">
+        <!-- Tarjetas usando las imágenes guardadas en la misma carpeta local -->
         <div class="character-card">
           <img src="images.jpg" alt="José María Morelos y Pavón">
           <h3>José María Morelos y Pavón</h3>
